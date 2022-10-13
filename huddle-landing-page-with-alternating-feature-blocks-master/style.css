@@ -11,7 +11,6 @@ html{
     background-image: url('../images/bg-hero-desktop.svg');
     padding: 5rem 8rem;
     padding-bottom: 6rem;
-    /* height: 90vh; */
     background-size: cover;
 }
 .hero-header{
@@ -28,7 +27,8 @@ html{
     font-size: 1.5rem;
     font-weight: 700;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
-    font-family: 'open sans', sans-serif
+    font-family: 'open sans', sans-serif;
+    cursor: pointer;
 }
 .hero-header button{
     width: 20rem;
@@ -36,8 +36,6 @@ html{
     color: #000;
     background: #fff;
     padding: 1.5rem 0;
-    /* display: table-cell;
-    vertical-align: middle */
 }
 .hero-main{
     display: flex;
@@ -68,7 +66,6 @@ html{
     background: hsl(322, 100%, 66%);
     color: #fff;
     width: 28rem;
-    /* box-shadow: 0px 3px 10px rgb(0 0 0 / 0.2); */
 }
 .hero-image{
     width: 55%;
@@ -111,15 +108,11 @@ html{
     background: #fff;
     text-align: center;
     margin: 0 auto;
-    /* margin-top: 15rem; */
     margin-top: 17rem;
     margin-bottom: -25rem;
     z-index: 10;
     padding: 5rem 12rem;
     width: 50%;
-    /* bottom: -200rem; */
-    /* position: absolute; */
-    /* width: calc(70rem - 12rem); */
 }
 .build-card h2{
     font-size: 3.5rem;
@@ -139,14 +132,13 @@ html{
     font-size: 1.7rem;
     position: relative;
     padding: 20rem 12rem;
-    
+    padding-bottom: 6rem   
 }
 .footer-main{
     display: flex;
     justify-content: space-between;
 }
 .footer-logo{
-    /* display: block; */
     margin-bottom: 2rem;
     filter: brightness(0) invert(1);
     height: 3.9rem;
@@ -157,34 +149,44 @@ html{
     gap: 2.5rem;
 }
 .icon-location{
-    margin-top: -4.5rem;
-    /* align-self: top; */
-    /* position: flex-start; */
-    /* color: red; */
-    /* display: inline-block;*/
-    /* vertical-align: top; */
-    /* text-align: start; */
-    
-}
-.icon-text p{
-
-    
+    margin-top: -4.5rem;   
 }
 .footer p{
     max-width: 35rem;
     line-height: 2.5rem;
 }
+.footer-fifth{
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+}
 .social-icons{
     display: flex;
-    align-items: flex-end;
-    align-items: flex-end;
-    vertical-align: bottom;
+    gap: 1.2rem;
+}
+.social-icon-container{
+    border: 1.55px solid #fff;
+    border-radius: 50px;
+    padding: .7rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .social-icon{
-    /* vertical-align: bottom; */
-    /* height: 2.8rem; */
-    width: 2rem;
-    /* display: inline; */
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    padding: 0;
+    filter:brightness(0) invert(1);
+    cursor: pointer;
+}
+.copyright{
+    font-size: 1.25rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
 }
    
 
@@ -193,12 +195,6 @@ html{
         background: url(./images/bg-hero-mobile.svg) hsl(193, 100%, 96%) no-repeat center center;
         background-size: contain;
         padding: 3rem 2rem 4rem 2rem;
-        /* padding-top: 4rem; */
-        /* text-align: center; */
-        /* padding: 0;
-        /* width: 200%; */
-        /* height: 100%; */
-        /* background-position: center; */
     }
     .hero-header{
         align-items: center;
@@ -208,7 +204,6 @@ html{
         width: 10rem;
         font-size: 1rem;
         text-align: center;
-        /* color: #000; */
         background: #fff;
         padding: .7rem 0;
        
@@ -220,15 +215,11 @@ html{
         display: block;
         width: 100%;
         text-align: center;
-        /* margin: 0 auto ; */
-        /* padding: 0; */
     }
     .hero-text h1{
         font-size: 2.5rem;
         max-width: 28rem;
         margin: 0 auto;
-        /* width: 50%; */
-        /* align-self: center; */
         color: hsl(192, 100%, 9%);
         font-weight: 600;
         text-align: center;
@@ -240,22 +231,18 @@ html{
         font-weight: 400;
         line-height: 2.5rem;
         color: hsl(192, 100%, 9%);
-        /* min-width: 100%; */
     }
     .hero-text button{
         padding: 1.6rem 0;
         margin-top: 1.8rem;
         width: 25rem;
         font-size: 1.2rem;
-        /* height: 5rem; */
-        /* box-shadow: 0px 3px 10px rgb(0 0 0 / 0.2); */
     }
     .hero-image{
         margin-top: 5rem;
         width: 90%;
     }
     .info-section{
-        /* padding: 0 2.4rem; */
         padding: 0;
         padding-top: 6rem;
         margin: 0;
@@ -263,25 +250,15 @@ html{
     .info-card{
         display: flex;
         flex-direction: column;
-        /* display: block; */
         text-align: center;
         padding: 6rem 0 3rem 0;
-        /* margin: 0 2.4rem; */
         margin-left: 2.2rem;
         margin-right: 2.2rem;
         
     }
-    .info-text{
-        /* display: flex;
-        flex-direction: column-reverse; */
-        /* order: 2; */
-    }
-    .info-card h2{
-        /* align-items: center; */
-        
+    .info-card h2{  
         font-size: 2rem;
         margin: 0 auto;
-        /* margin-top: 1rem; */
     }
     .info-card p{
         font-weight: 400;
@@ -291,104 +268,77 @@ html{
         margin: 0 auto;
         margin-top: 1rem;
         margin-bottom: 3rem;
-        
-        /* margin-top: 1rem; */
     }
     .info-card:last-child p{
         max-width: 27rem;
     }
-    .card-text{
-
-    }
     .info-card img{
         order: -1;
-        /* display: block; */
         width: 25rem;
         text-align: center;
         margin: 0 auto;
         margin-bottom: 6rem;
     }
-    /* .build-card{
-        text-align: center;
-        margin: 0 auto;
-        z-index: 10;
-        /* width: 30rem */
-        /* width: 10rem; */
-        /* width: calc(70rem - 12rem); */
-        /* width: 10rem;
-        height: 5rem; */
     .build-card{
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        /* width: 10rem; */
-        /* height: 4rem; */
-        /* width: 37rem; */
         text-align: center;
         width: 94%;
         margin-bottom: -7rem;
         padding: 0;
         margin-top: 13rem;
-        /* margin-left: 1rem; */
-        /* margin-right: 1rem; */
     }
     
     .build-card h2{
         font-size: 1.9rem;
         margin: 0;
-        /* line-height: 1.8rem; */
         padding: 3.7rem 0 1.5rem 0;
         text-align: center;
-        /* min-width: 100%; */
-        /* padding: 0; */
-        /* line-height: 0; */
-        /* display: block; */
-        /* width: 10rem; */
-        /* margin-top: 1rem; */
     }
     .build-card button{
         padding: 1.5rem .5rem;
-        /* padding: 3rem 12rem; */
-        /* margin-top: 3rem; */
-        /* height: 3.5rem; */
         font-size: 1.1rem;
         margin: 0 auto;
         width: 22rem;
         text-align: center;
         margin-bottom: 4.5rem;
     }
+    
+    .footer-part{
+        margin-left: 2rem;
+    }
     .footer{
-        padding: 15rem 0 4rem 2rem;
+        padding: 15rem 0 4rem 0rem;
     }
     .footer-logo{
-        /* height: 1rem; */
-        /* size: 50%; */
         margin: 0;
+        margin-left: 2rem;
         padding: 0;
         height: 2.8rem;
         width: 18rem;
     }
+    .icon-location{
+        margin-top: -6.8rem;
+    }
     .icon-text p{
         max-width: 31.2rem;
     }
-    /* .icon-location{
-        width: 15px;
-        height: 18px;
-    }
-    .icon-text img{
-        width: 21px;
-    } */
     .footer-fourth{
         margin-top: -1.5rem;
     }
-    
     .footer-main{
         padding: 0;
         margin: 0;
-        /* display: flex; */
         flex-direction: column;
-        /* justify-content: flex-start; */
-        /* justify-content: space-between; */
     }
-    
+    .footer-first{
+        margin-bottom: 3rem;
+    }
+    .footer-fifth{
+        margin: 0;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }  
 }
